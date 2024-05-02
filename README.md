@@ -1,36 +1,35 @@
-# Welcome to Remix + Vite!
+# Thesaurus App
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/guides/vite) for details on supported features.
+This Thesaurus App is built using the Remix framework and utilizes the OpenAI API to provide synonyms for words entered by users. It's simple to use and integrates cutting-edge AI to enhance user experience.
 
-## Development
+## Prerequisites
 
-Run the Vite dev server:
+- Node.js 14.x or later
+- npm or Yarn
+- OpenAI API key
 
-```shellscript
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/thesaurus-app.git
+cd thesaurus-app
+yarn install
+```
+
+## Configuration
+
+Create a .env file in the project root and add your OpenAI API key:
+
+```bash
+OPENAI_API_KEY=Your_OpenAI_API_Key
+```
+
+## Running the App
+
+Start the development server:
+
+```bash
 npm run dev
 ```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
