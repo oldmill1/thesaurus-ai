@@ -39,15 +39,17 @@ export default function Index() {
   return (
     <div className='container'>
       <h1 className='title'>Thesaurus</h1>
-      <p>Enter a word to find synonyms:</p>
-      <Form method='post'>
-        <input
-          name='word'
-          type='text'
-          className='inputField'
-          placeholder='Type a word...'
-        />
-      </Form>
+      <p className='message'>Enter a word to find synonyms:</p>
+      <div id='form_container'>
+        <Form method='post'>
+          <input
+            name='word'
+            type='text'
+            className='inputField'
+            placeholder='Type a word...'
+          />
+        </Form>
+      </div>
       {actionData?.synonyms && (
         <div>
           <h2>Synonyms:</h2>

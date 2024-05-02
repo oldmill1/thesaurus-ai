@@ -14,7 +14,7 @@ export async function findSynonyms(word: string) {
     {
       role: 'system',
       content:
-        'You are a thesaurus. Help me find similar words / phrases / synonyms for the words or phrases that I provide.',
+        'You are a thesaurus. Help me find similar words / phrases / synonyms for the words or phrases that I provide. Return a comma seperated list of words / phrases.',
     },
     {
       role: 'user',

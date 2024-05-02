@@ -1,16 +1,58 @@
+body {
+  background: #0e1012;
+}
 .container {
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
+  color: #f37953;
+  font-family: 'Shrikhand', serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.9em;
+}
+
+p.message {
+  font-family: 'Gilda Display', serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #968d78;
+  text-align: center;
+  font-size: 1.7em;
 }
 
 .inputField {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px #333, 0 0 0 4px #555;
+  background-color: #182431;
+  font-size: 1.9em;
+  font-weight: 300;
+  width: 300px;
+  height: 40px;
+  color: #968d78;
+  transition: all 0.3s ease-in-out; /* add transition for smooth animation */
+}
+
+.inputField:focus {
+  outline: none;
+  transform: scale(1.05); /* add scale transformation to grow the input field */
+  box-shadow: 0 0 0 1px #333, 0 0 0 4px #007aff, 0 0 10px rgba(0, 122, 255, 0.5); /* add glow effect */
+}
+
+.inputField::placeholder {
+  color: #999;
+  font-weight: 300;
+}
+
+#form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
 }
